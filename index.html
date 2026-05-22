@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стоматологічний кабінет «Посмішка+»</title>
+  <meta
+    id="meta-description"
+    name="description"
+    content="Стоматологічний кабінет «Посмішка+»: сучасна стоматологія з комфортом, турботою та безболісними методами."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Nunito+Sans:wght@400;600;700;800&family=Poppins:ital,wght@0,500;1,500&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="На головну">
+        <img class="logo-plain" src="assets/Logo2.png" alt="Логотип Посмішка+" />
+        <span>Посмішка+</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Головне меню">
+        <a href="#about" data-i18n="nav_about">Про нас</a>
+        <a href="#services" data-i18n="nav_services">Послуги</a>
+        <a href="#contacts" data-i18n="nav_contacts">Контакти</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-small" href="#" data-open-call-modal data-i18n="nav_book">Записатися</a>
+        <div class="lang-switch" role="group" aria-label="Вибір мови">
+          <button type="button" class="lang-btn active" data-lang="uk">UA</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="container banner-content">
+        <div class="banner-left">
+          <h2 class="banner-title" data-i18n="banner_title">Стоматологічний кабінет</h2>
+          <div class="banner-brandline">
+            <img src="assets/Logo2.png" alt="Логотип Посмішка+" class="banner-logo-mark" />
+            <h1 class="banner-name" data-i18n="banner_name">Посмішка<span class="plus">+</span></h1>
+          </div>
+          <p class="banner-slogan" data-i18n="banner_slogan">Ми повертаємо не лише природну посмішку, а й відчуття спокою та впевненості в собі.</p>
+          <button class="btn btn-primary banner-cta" type="button" data-open-call-modal data-i18n="hero_cta">Записатися на прийом</button>
+        </div>
+        <div class="banner-right">
+          <img src="assets/S4.png" alt="Пацієнт у стоматологічному кріслі" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-layout">
+        <figure class="about-photo-wrap">
+          <img src="assets/S1.png" alt="Лікар-стоматолог Олег Володимирович Рубель" class="about-photo" />
+        </figure>
+
+        <div class="about-copy">
+          <h2 data-i18n="about_title">Про нас</h2>
+
+          <p class="about-lead" data-i18n="about_intro_1">
+            Мене звати Олег Володимирович Рубель, я лікар-стоматолог з 28-річним досвідом роботи.
+            За ці роки я допоміг багатьом людям повернути здоров'я зубів, комфорт та впевненість у власній посмішці.
+          </p>
+
+          <p data-i18n="about_intro_2">
+            Понад 20 років я працював у державній лікарні, де отримав великий практичний досвід і навчився працювати з
+            найрізноманітнішими випадками. Останні 8 років веду приватну практику, де можу приділити кожному пацієнту
+            стільки уваги, скільки потрібно, і створити максимально комфортні умови.
+          </p>
+
+          <p class="about-block-note" data-i18n="about_focus_note">
+            Мої основні напрямки роботи - терапевтична та ортопедична стоматологія.
+          </p>
+        </div>
+
+        <div class="about-details">
+          <article class="about-block">
+            <h3 class="about-subtitle" data-i18n="about_ther_title">Терапевтична стоматологія</h3>
+            <p data-i18n="about_ther_text">
+              Це лікування зубів та ясен. Я займаюся лікуванням карієсу, пульпіту, періодонтиту, проводжу естетичні
+              реставрації та допомагаю зберегти природні зуби якомога довше. Пояснюю кожен крок простою мовою, щоб
+              пацієнт розумів, що і навіщо ми робимо.
+            </p>
+          </article>
+
+          <article class="about-block">
+            <h3 class="about-subtitle" data-i18n="about_principles_title">Мої принципи в роботі</h3>
+            <ul class="about-principles">
+              <li data-i18n="about_principle_1">Безболісні методи</li>
+              <li data-i18n="about_principle_2">Сучасне обладнання</li>
+              <li data-i18n="about_principle_3">Індивідуальний підхід</li>
+              <li data-i18n="about_principle_4">Еко-матеріали та безпечні препарати</li>
+              <li data-i18n="about_principle_5">Комфортна атмосфера</li>
+              <li data-i18n="about_principle_6">Якість і акуратність</li>
+              <li data-i18n="about_principle_7">Помірні ціни</li>
+            </ul>
+          </article>
+
+          <article class="about-block about-block-final">
+            <p data-i18n="about_final_text">
+              Багато людей приходять до мене за рекомендаціями - і це найбільша оцінка моєї роботи. Я завжди відкритий до
+              спілкування, пояснюю все доступно та роблю все можливе, щоб лікування проходило спокійно й безболісно.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 data-i18n="services_title">Послуги терапевтичної стоматології</h2>
+        <div class="cards-grid">
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/q6.png" alt="Іконка лікування карієсу" /></div>
+              <h3 data-i18n="service_1_t">Лікування карієсу</h3>
+            </div>
+            <p data-i18n="service_1_d">Дбайливе лікування з точним відновленням анатомії зуба.</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/a1.png" alt="Іконка лікування пульпіту" /></div>
+              <h3 data-i18n="service_2_t">Лікування пульпіту</h3>
+            </div>
+            <p data-i18n="service_2_d">Сучасні методики знеболення та ефективна ендодонтична обробка.</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/a2.png" alt="Іконка лікування періодонтиту" /></div>
+              <h3 data-i18n="service_3_t">Лікування періодонтиту</h3>
+            </div>
+            <p data-i18n="service_3_d">Комплексне лікування запальних процесів для збереження зуба.</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/q4.png" alt="Іконка пломбування та реставрацій" /></div>
+              <h3 data-i18n="service_4_t">Пломбування та естетичні реставрації</h3>
+            </div>
+            <p data-i18n="service_4_d">Відновлення форми, кольору та функції зубів максимально природно.</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/q3.png" alt="Іконка діагностики та консультації" /></div>
+              <h3 data-i18n="service_5_t">Професійна діагностика та консультація</h3>
+            </div>
+            <p data-i18n="service_5_d">Повна оцінка стану зубів і прозорий індивідуальний план лікування.</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/q1.png" alt="Іконка професійної гігієни" /></div>
+              <h3 data-i18n="service_6_t">Професійна гігієна зубів</h3>
+            </div>
+            <p data-i18n="service_6_d">Делікатне очищення нальоту та каменю для здорових ясен.</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/w1.png" alt="Іконка лікування ясен" /></div>
+              <h3 data-i18n="service_7_t">Лікування захворювань ясен</h3>
+            </div>
+            <p data-i18n="service_7_d">Профілактика та лікування гінгівіту й інших проблем пародонту.</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/w2.png" alt="Іконка відбілювання зубів" /></div>
+              <h3 data-i18n="service_8_t">Відбілювання зубів</h3>
+            </div>
+            <p data-i18n="service_8_d">Безпечне освітлення емалі з контрольованим і природним результатом.</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/w3.png" alt="Іконка дитячої стоматології" /></div>
+              <h3 data-i18n="service_9_t">Дитяча стоматологія</h3>
+            </div>
+            <p data-i18n="service_9_d">Спокійний дружній прийом, адаптований під маленьких пацієнтів.</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <div class="service-head">
+              <div class="icon"><img src="assets/q2.png" alt="Іконка реставрації після травм" /></div>
+              <h3 data-i18n="service_10_t">Реставрація зубів після травм</h3>
+            </div>
+            <p data-i18n="service_10_d">Естетичне та функціональне відновлення пошкоджених зубів.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts section" id="contacts">
+      <div class="container contacts-layout">
+        <div class="contacts-top">
+          <div class="contact-info">
+          <h2 data-i18n="contacts_title">Контакти</h2>
+          <ul class="contact-list">
+            <li><strong data-i18n="label_address">Адреса:</strong> <span data-i18n="value_address">вулиця Острозького, 62, Вінниця, Вінницька область, 21000</span></li>
+            <li><strong data-i18n="label_phone">Телефон:</strong> <a href="tel:+380972376345">+380972376345</a></li>
+            <li><strong>Email:</strong> <a href="mailto:dentalsmailplus@gmail.com">dentalsmailplus@gmail.com</a></li>
+            <li><strong data-i18n="label_hours">Графік роботи:</strong> <span data-i18n="value_hours">Понеділок-П'ятниця: 09:00-12:00, 14:00-18:00</span></li>
+            <li><strong data-i18n="label_lunch">Обід:</strong> <span data-i18n="value_lunch">12:00-14:00</span></li>
+            <li><strong data-i18n="label_weekend">Субота-Неділя:</strong> <span data-i18n="value_weekend">Вихідний</span></li>
+          </ul>
+          <div class="contact-actions">
+            <a class="btn contact-review-btn" href="https://www.google.com/maps/place/%D0%A1%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B8%D0%B9+%D0%BA%D0%B0%D0%B1%D1%96%D0%BD%D0%B5%D1%82+Smail+/@49.2407166,28.4893875,184m/data=!3m1!1e3!4m6!3m5!1s0x472d5b000140c17f:0x48323ed342090213!8m2!3d49.2407069!4d28.4890655!16s/g/11njy33l60?entry=ttu" target="_blank" rel="noopener noreferrer" data-i18n="reviews_write_btn">Залишити відгук</a>
+            <a class="btn btn-primary contact-cta" href="#" data-open-call-modal data-i18n="book_btn">Записатися</a>
+          </div>
+          </div>
+
+          <figure class="chair-photo-card" id="chair-photo-card">
+            <div class="chair-photo-stage">
+              <img src="assets/S33.png" alt="Стоматологічне крісло з лампою" />
+            </div>
+          </figure>
+        </div>
+
+        <div class="contacts-map-row">
+          <div class="map-wrap">
+            <iframe
+              title="Google карта стоматологічного кабінету"
+              src="https://www.google.com/maps?q=49.2407011,28.4889796&z=19&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="brand" href="#top" aria-label="На головну">
+        <span class="logo-shell">
+          <img src="assets/Logo2.png" alt="Логотип Посмішка+" />
+        </span>
+        <span>Посмішка+</span>
+      </a>
+
+      <nav class="footer-menu" aria-label="Меню у футері">
+        <a href="#about" data-i18n="nav_about">Про нас</a>
+        <a href="#services" data-i18n="nav_services">Послуги</a>
+        <a href="#contacts" data-i18n="nav_contacts">Контакти</a>
+      </nav>
+
+    </div>
+    <p class="copyright">
+      <span data-i18n="copyright">© 2026 «Посмішка+». Усі права захищено.</span>
+      <span class="copyright-sep"> | </span>
+      <span data-i18n="dev_text">Швидка та якісна розробка сайтів на замовлення від</span>
+      <a href="https://maxonikss.github.io/Portfolio/#home" target="_blank" rel="noopener noreferrer" data-i18n="dev_brand">MAXONIK</a>
+    </p>
+  </footer>
+
+  <div class="call-modal" id="call-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="call-title">
+    <div class="call-modal-panel">
+      <button class="call-modal-close" type="button" id="call-close" aria-label="Закрити">×</button>
+      <p class="call-modal-kicker" data-i18n="modal_kicker">Швидкий запис на прийом</p>
+      <h2 id="call-title" data-i18n="modal_title">Подзвоніть нам зараз</h2>
+      <p class="call-number">+380972376345</p>
+      <a class="call-now" href="tel:+380972376345" aria-label="Зателефонувати">
+        <span class="call-now-icon">📞</span>
+        <span data-i18n="modal_call">Зателефонувати</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
