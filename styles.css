@@ -71,7 +71,7 @@ h2 {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(213, 240, 234, 0.8);
   box-shadow: 0 8px 28px rgba(26, 95, 88, 0.12);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .site-header::after {
@@ -1289,12 +1289,25 @@ h2 {
     background: #ffffff;
     padding: 0.9rem 1rem 1.2rem;
     border-bottom: 1px solid var(--line);
-    display: none;
+    display: flex;
     flex-direction: column;
+    z-index: 60;
+    box-shadow: 0 12px 24px rgba(23, 91, 84, 0.14);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: max-height 0.28s ease, opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
   }
 
   .main-nav.open {
-    display: flex;
+    max-height: 320px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .btn-small {
